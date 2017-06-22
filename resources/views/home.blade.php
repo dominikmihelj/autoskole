@@ -17,13 +17,13 @@
                         <h2>Job Searching Just Got So Easy</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi deserunt deleniti, ullam commodi sit ipsam laboriosam velit adipisci quibusdam aliquam teneturo!</p>
                         <div class="search-form wow pulse" data-wow-delay="0.8s">
-                            <form action="" class="form-inline">
+                            <form name="place" action="{{ action('SchoolController@index') }}" method="post" class="form-inline">
+                             {{ csrf_field() }}
                                 <div class="form-group">
-                                    <select name="" id="" class="form-control col-lg-8">
-                                        <option>Select Your Category</option>
-                                        <option selected>Graphic Design</option>
-                                        <option>Web Design</option>
-                                        <option>App Design</option>
+                                    <select name="cities" id="" class="form-control col-lg-8">
+                                        @foreach($cities as $town)
+                                            <option value="{{ $town->city }}">{{ $town->city }}</option>
+                                        @endforeach
                                     </select>
                                 </div>
                                		<input type="submit" class="btn btn-responsive" value="Search">
@@ -65,6 +65,6 @@
                     </div>
                 </div>
             </div>
-@endsection
+@stop
 
 

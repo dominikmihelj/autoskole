@@ -12,7 +12,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
+              <a class="navbar-brand" href="{{ url('/') }}">{{ Html::image('img/logo.png') }}</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -24,13 +24,13 @@
               </div>
               @else
                 <div class="button navbar-right">
-                  <button class="navbar-btn nav-button wow bounceInRight login" data-wow-delay="0.8s">Logout</button>
+                  <a class="navbar-btn nav-button wow bounceInRight login" href="{{ url('logout') }}" data-wow-delay="0.8s">Logout</a>
                 </div>
               @endif
               <ul class="main-nav nav navbar-nav navbar-right">
                 <li class="wow fadeInDown" data-wow-delay="0s"><a class="active" href="{{ url('/') }}">Home</a></li>
-                <li class="wow fadeInDown" data-wow-delay="0.3s"><a href="#">About us</a></li>
-                <li class="wow fadeInDown" data-wow-delay="0.5s"><a href="#">Contact</a></li>
+                <li class="wow fadeInDown" data-wow-delay="0.3s"><a href="{{ url('/about') }}">About us</a></li>
+                <li class="wow fadeInDown" data-wow-delay="0.5s"><a href="{{ url('/contact') }}">Contact</a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->

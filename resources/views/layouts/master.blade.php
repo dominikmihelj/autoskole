@@ -1,4 +1,5 @@
 @include('layouts.head')
+<body>
 @include('layouts.navigation')
 
 @yield('content')

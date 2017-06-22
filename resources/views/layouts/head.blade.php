@@ -6,7 +6,7 @@
 <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Jonaki | Job Board Template</title>
+        <title>Autoškole.hr</title>
         <meta name="description" content="company is a free job board template">
         <meta name="author" content="Ohidul">
         <meta name="keyword" content="html, css, bootstrap, job-board">
@@ -17,18 +17,21 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+        
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/fontello.css">
-        <link rel="stylesheet" href="css/animate.css">        
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/owl.carousel.css">
-        <link rel="stylesheet" href="css/owl.theme.css">
-        <link rel="stylesheet" href="css/owl.transitions.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/responsive.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        {{ Html::style('css/normalize.css') }}
+        {{ Html::style('css/font-awesome.min.css') }}
+        {{ Html::style('css/fontello.css') }}
+        {{ Html::style('css/css/animate.css') }}
+        {{ Html::style('css/bootstrap.min.css') }}
+        {{ Html::style('css/owl.carousel.css') }}
+        {{ Html::style('css/owl.theme.css') }}
+        {{ Html::style('css/owl.transitions.css') }}
+        {{ Html::style('css/style.css') }}
+        {{ Html::style('css/responsive.css') }}
+        {{ Html::script('js/vendor/modernizr-2.6.2.min.js') }}
+
+        
         <!--
         <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">

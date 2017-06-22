@@ -1,15 +1,3 @@
-/*
-	boje:
-		#161925
-		#F39237
-		#2980B9
-		#40BCD8
-		#D63230
-		//bolja crvena
-		#F24236
-	;
-*/
-
 body{
 	font-family: 'Open Sans', sans-serif;
 }
@@ -625,4 +613,18 @@ body {
     background-repeat:no-repeat;
     background-position:center;
     margin:-100px 0 0 -100px; /* is width and height divided by two */
+}
+
+.spacer{
+	padding-bottom: 5px;
+}
+
+.lista{
+	list-style: none;
+}
+
+.equal {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
 }

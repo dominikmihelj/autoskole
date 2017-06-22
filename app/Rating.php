@@ -10,10 +10,13 @@ class Rating extends Model
     //repalce with fillable
     protected $guarded = [];
 
-    public function rateable() {
+    public function rateable()
+    {
     	return $this->morphTo();
     }
-    public function author(){
-    	return $this->belongsTo('User');
+
+    public function author()
+    {
+    	return $this->belongsTo('App\User', 'user_id');
     }
 }

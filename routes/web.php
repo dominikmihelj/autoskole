@@ -11,14 +11,18 @@
 |
 */
 Auth::routes();
+Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
 Route::get('/', 'HomeController@index');
-Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/schools', 'SchoolController@index');
-Route::get('/schools/{schoolId}', 'SchoolController@show');
-Route::post('/schools/{schoolId}', 'SchoolController@store');
+Route::post('/schools', 'SchoolController@index');
+Route::get('/schools/{school}', 'SchoolController@show');
+Route::post('/schools/{school}', 'SchoolController@store');
 
-Route::get('/schools/{schoolId}/instructors', 'InstructorController@index');
-Route::get('/schools/{schoolId}/instructors/{instructorId}', 'InstructorController@show');
-Route::post('/schools/{schoolId}/instructors/{instructorId}', 'InstructorController@store');
+Route::post('/schools/{school}/instructors', 'InstructorController@create');
+Route::get('/schools/{school}/instructors/{instructor}', 'InstructorController@index');
+Route::post('/schools/{school}/instructors/{instructor}', 'InstructorController@store');
+
+Route::get('/about', 'AboutController@index');
+
+Route::get('/contact', 'ContactController@index');
