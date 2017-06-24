@@ -19,8 +19,9 @@ Route::post('/schools', 'SchoolController@index');
 Route::get('/schools/{school}', 'SchoolController@show');
 Route::post('/schools/{school}', 'SchoolController@store');
 
-Route::post('/schools/{school}/instructors', 'InstructorController@create');
 Route::get('/schools/{school}/instructors/{instructor}', 'InstructorController@index');
+Route::get('/schools/{school}/create', 'InstructorController@show');
+Route::post('/schools/{school}/create', 'InstructorController@create');
 Route::post('/schools/{school}/instructors/{instructor}', 'InstructorController@store');
 
 Route::get('/about', 'AboutController@index');

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\School;
+
 use App\Rating;
 
 class SchoolController extends Controller
@@ -28,9 +29,9 @@ class SchoolController extends Controller
     	return view('school', compact('school'));
     }
 
-    public function store(School $school)
+    public function store(School $school, Request $request)
     {
-        $school->addRating(request('body'), request('score'));
+        $school->addRating($request);
         return back();
     }
 }

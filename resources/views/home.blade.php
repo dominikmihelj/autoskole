@@ -4,11 +4,9 @@
 <div class="slider-area">
             <div class="slider">
                 <div id="bg-slider" class="owl-carousel owl-theme">
-                 
-                  <div class="item"><img src="img/slider-image-3.jpg" alt="Mirror Edge"></div>
-                  <div class="item"><img src="img/slider-image-2.jpg" alt="The Last of us"></div>
-                  <div class="item"><img src="img/slider-image-1.jpg" alt="GTA V"></div>
-                 
+                  <div class="item"><img src="img/slika1.png" alt=""></div>
+                  <div class="item"><img src="img/slika2.png" alt=""></div>
+                  <div class="item"><img src="img/slika3.png" alt=""></div>
                 </div>
             </div>
             <div class="container slider-content">
@@ -16,7 +14,7 @@
                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12">
                         <h2>Job Searching Just Got So Easy</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi deserunt deleniti, ullam commodi sit ipsam laboriosam velit adipisci quibusdam aliquam teneturo!</p>
-                        <div class="search-form wow pulse" data-wow-delay="0.8s">
+                        <div class="search-form wow pulse trazilica" data-wow-delay="0.8s">
                             <form name="place" action="{{ action('SchoolController@index') }}" method="post" class="form-inline">
                              {{ csrf_field() }}
                                 <div class="form-group">

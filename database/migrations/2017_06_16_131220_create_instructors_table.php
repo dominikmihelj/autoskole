@@ -20,7 +20,7 @@ class CreateInstructorsTable extends Migration
             $table->string('name');
             $table->string('telephone');
             $table->string('car');
-            $table->string('category');
+            $table->string('categories');
             $table->timestamps();
         });
     }

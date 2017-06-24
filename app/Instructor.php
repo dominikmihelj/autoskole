@@ -14,11 +14,6 @@ class Instructor extends Model
     //repalce with fillable
     protected $guarded = [];
 
-    public function ratings()
-    {
-    	return $this->morphMany('Rating', 'rateable');
-    }
-
     public function schools()
     {
     	return $this->belongsTo('School', 'school_id');

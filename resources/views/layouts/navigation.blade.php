@@ -19,16 +19,15 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             @if(Auth::guest())
               <div class="button navbar-right">
-                  <a class="navbar-btn nav-button wow bounceInRight login" data-wow-delay="0.8s" href="{{ url('login') }}">Login</a>
-                  <a class="navbar-btn nav-button wow fadeInRight" data-wow-delay="0.6s" href="{{ url('register') }}">Registriraj se</a>
+                  <button class="navbar-btn nav-button wow bounceInRight login"><a class="navi" data-wow-delay="0.8s" href="{{ url('login') }}">Login</a></button>
+                  <button class="navbar-btn nav-button wow fadeInRight"><a class="navi" data-wow-delay="0.6s" href="{{ url('register') }}">Registriraj se</a></button>
               </div>
               @else
                 <div class="button navbar-right">
-                  <a class="navbar-btn nav-button wow bounceInRight login" href="{{ url('logout') }}" data-wow-delay="0.8s">Logout</a>
+                  <button class="navbar-btn nav-button wow bounceInRight login" ><a class="navi" href="{{ url('logout') }}" data-wow-delay="0.8s">Logout, {{ Auth::user()->name }}</a></button>
                 </div>
               @endif
               <ul class="main-nav nav navbar-nav navbar-right">
-                <li class="wow fadeInDown" data-wow-delay="0s"><a class="active" href="{{ url('/') }}">Home</a></li>
                 <li class="wow fadeInDown" data-wow-delay="0.3s"><a href="{{ url('/about') }}">About us</a></li>
                 <li class="wow fadeInDown" data-wow-delay="0.5s"><a href="{{ url('/contact') }}">Contact</a></li>
               </ul>

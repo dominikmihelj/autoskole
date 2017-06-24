@@ -620,7 +620,13 @@ body {
 }
 
 .lista{
-	list-style: none;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.trazilica{
+	background: transparent;
 }
 
 .equal {
@@ -628,3 +634,63 @@ body {
   display: -webkit-flex;
   flex-wrap: wrap;
 }
+
+.navi, .navi:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+@media screen and (min-device-width: 768px){
+	.skole{
+		min-height: 800px;
+	}
+}
+
+@media screen and (max-device-width: 768px){
+	.skole{
+		min-height: 300px;
+	}
+}
+
+/*Pure CSS Star rating Widget*/
+
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+fieldset, label { margin: 0; padding: 0; }
+
+/****** Style Star rating Widget *****/
+
+.score { 
+  border: none;
+  float: left;
+}
+
+.score > input { display: none; } 
+.score > label:before { 
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.score > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.score > label { 
+  color: #ddd; 
+ float: right; 
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.score > input:checked ~ label, /* show gold star when clicked */
+.score:not(:checked) > label:hover, /* hover current star */
+.score:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.score > input:checked + label:hover, /* hover current star when changing score */
+.score > input:checked ~ label:hover,
+.score > label:hover ~ input:checked ~ label, /* lighten current selection */
+.score > input:checked ~ label:hover ~ label { color: #FFED85;  } 
