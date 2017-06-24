@@ -19,17 +19,7 @@
         <link rel="icon" href="img/favicon.ico" type="image/x-icon">
         
 
-        {{ Html::style('css/normalize.css') }}
-        {{ Html::style('css/font-awesome.min.css') }}
-        {{ Html::style('css/fontello.css') }}
-        {{ Html::style('css/css/animate.css') }}
-        {{ Html::style('css/bootstrap.min.css') }}
-        {{ Html::style('css/owl.carousel.css') }}
-        {{ Html::style('css/owl.theme.css') }}
-        {{ Html::style('css/owl.transitions.css') }}
-        {{ Html::style('css/style.css') }}
-        {{ Html::style('css/responsive.css') }}
-        {{ Html::script('js/vendor/modernizr-2.6.2.min.js') }}
+       
 
         
         <!--
