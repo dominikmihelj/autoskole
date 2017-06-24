@@ -4,9 +4,9 @@
 <div class="slider-area">
             <div class="slider">
                 <div id="bg-slider" class="owl-carousel owl-theme">
-                  <div class="item"><img src="img/slika1.png" alt=""></div>
-                  <div class="item"><img src="img/slika2.png" alt=""></div>
-                  <div class="item"><img src="img/slika3.png" alt=""></div>
+                  <div class="item"><img class="img-responsive" src="img/slika1.png" alt=""></div>
+                  <div class="item"><img class="img-responsive" src="img/slika2.png" alt=""></div>
+                  <div class="item"><img class="img-responsive" src="img/slika3.png" alt=""></div>
                 </div>
             </div>
             <div class="container slider-content">
@@ -36,30 +36,25 @@
         <div class="content-area">
             <div class="container">
                 <div class="row page-title text-center wow zoomInDown" data-wow-delay="1s">
-                    <h5>Our Process</h5>
-                    <h2>How we work for you?</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae illum dolorem, rem officia, id explicabo sapiente</p>
+                    <h2>Kako stranica radi?</h2>
                 </div>
                 <div class="row how-it-work text-center">
                     <div class="col-md-4">
                         <div class="single-work wow fadeInUp" data-wow-delay="0.8s">
                             <img src="img/how-work1.png" alt="">
-                            <h3>Searching for the best job</h3>
-                            <p>Using the outcomes from the job, we will put together a plan for the most effective marketing strategy to get the best results.</p>
+                            <h3>Nađite autoškolu</h3>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="single-work  wow fadeInUp"  data-wow-delay="0.9s">
                             <img src="img/how-work2.png" alt="">
-                            <h3>Searching for the best job</h3>
-                            <p>Using the outcomes from the job, we will put together a plan for the most effective marketing strategy to get the best results.</p>
+                            <h3>Dodajte instruktora ako nije u bazi</h3>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="single-work wow fadeInUp"  data-wow-delay="1s">
                             <img src="img/how-work3.png" alt="">
-                            <h3>Searching for the best job</h3>
-                            <p>Using the outcomes from the job, we will put together a plan for the most effective marketing strategy to get the best results.</p>
+                            <h3>Ocijenite autoškolu i instruktora</h3>
                         </div>
                     </div>
                 </div>
