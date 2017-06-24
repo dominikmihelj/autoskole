@@ -28,8 +28,8 @@
                 </div>
               @endif
               <ul class="main-nav nav navbar-nav navbar-right">
-                <li class="wow fadeInDown" data-wow-delay="0.3s"><a href="{{ url('/about') }}">About us</a></li>
-                <li class="wow fadeInDown" data-wow-delay="0.5s"><a href="{{ url('/contact') }}">Contact</a></li>
+                <li class="wow fadeInDown" data-wow-delay="0.3s"><a href="{{ url('/about') }}">O nama</a></li>
+                <li class="wow fadeInDown" data-wow-delay="0.5s"><a href="{{ url('/contact') }}">Kontakt</a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->

@@ -68,7 +68,7 @@ background-color: #2980B9;
 	margin-right: 20px
 }
 .navbar-brand {
-  padding-top: 10px;
+ 	padding-top: 10px;
 }
 .main-nav {
   padding-top: 10px;
@@ -651,6 +651,11 @@ body {
 		min-height: 300px;
 	}
 }
+
+.naslov{
+	text-shadow: 0 0 5px #666666;
+}
+
 
 /*Pure CSS Star rating Widget*/
 

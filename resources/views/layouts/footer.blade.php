@@ -1,31 +1,22 @@
-<div class="footer-area">
+    <div class="footer-area">
             <div class="container">
-                <div class="row footer">
-                    <div class="col-md-4">
+                <div class="row footer text-center">
+                    <div class="col-xs-12">
                         <div class="single-footer">
                             {{ Html::image('img/logo.png'), array('class' => 'wow pulse', 'data-wow-delay' => '1s') }}
+                            <br>
+                            Autoškole.hr | 2017.
+                            <br>
+                            <ul class="list-inline">
+                                <li><a href="{{ url('/') }}">Početna</a></li>
+                                <li><a href="{{ url('/about') }}">O nama</a></li>
+                                <li><a href="{{ url('/contact') }}">Kontakt</a></li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="single-footer">
-                            <div class="footer-links">
-                                <ul class="list-unstyled">
-                                    <li><a href="">About Us</a></li>
-                                    <li><a href="">Contact Us</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row footer-copy">
-                    <p><span>(C) webstie, All rights reserved</span> | <span>Graphic Designed by <a href="https://dribbble.com/siblu">Eftakher Alam</a></span> | <span> Web Designed by <a href="http://ohidul.me">Ohidul Islam</a></span> </p>
                 </div>
             </div>
         </div>
-		
-		
-		
-		
 		
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
