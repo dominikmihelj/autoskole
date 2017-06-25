@@ -7,9 +7,6 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Autoškole.hr</title>
-        <meta name="description" content="company is a free job board template">
-        <meta name="author" content="Ohidul">
-        <meta name="keyword" content="html, css, bootstrap, job-board">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
