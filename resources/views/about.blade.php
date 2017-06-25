@@ -3,14 +3,12 @@
 @section('content')
 <div class="content-area">
     <div class="container">
-    	<div class="row skole">
-    		<h2>About us</h2>
-	        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    	<div class="row skole about">
+    		<h2>O nama</h2>
+    		<br>
+	        <p>Stranica AUTOŠKOLE.hr osmišljena je s ciljem unaprijeđenja kvaliteta autoškola, pomoganja polaznicima te povezivanja instruktora, autoškola i polaznika. Stranica pruža uvid u bazu podataka autoškola diljem Hrvatske te nudi korisnicima da dodaju instruktore u bazu podataka.</p>
+	        <br><br>
+	        <p>Primarni cilj je da korisnici ocijene autoškolu i instruktora, da podijele svoja iskustva s drugima te na taj način budućim generacijama daju vrijedne informacije kako bi se unaprijedilo učenje te podigla razina sigurnosti u prometu.</p>
     	</div>
     </div>
 </div>

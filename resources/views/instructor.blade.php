@@ -79,6 +79,7 @@
 				</div>
 			</div>
 		@endif
+		@include('layouts.errors')
 		</div>
     </div>
 </div>

@@ -6,19 +6,33 @@
     <div class="row skole">
         <h2>Kontakt</h2>
         <br><br>
-        <form class="form-horizontal" method="post" action="" >
+        <form class="form-horizontal" method="post" action="{{ action('ContactController@store') }}" >
         {{ csrf_field() }}
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="email">Email adresa:</label>
+            <div class="col-sm-6">
+              <input type="email" class="form-control" id="email" name="email" placeholder="Unesite email..." required>
+            </div>
+          </div>
+
           <div class="form-group">
             <label class="control-label col-sm-2" for="name">Ime i prezime:</label>
             <div class="col-sm-6">
-              <input type="text" class="form-control" id="name" name="name" placeholder="Unesite ime...">
+              <input type="text" class="form-control" id="name" name="name" placeholder="Unesite ime..." required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="subject">Naslov:</label>
+            <div class="col-sm-6">
+              <input type="text" class="form-control" id="subject" name="subject" placeholder="Unesite naslov..." required>
             </div>
           </div>
 
           <div class="form-group">
             <label class="control-label col-sm-2" for="comment">Komentar:</label>
             <div class="col-sm-6">
-                <textarea class="form-control" rows="10" id="comment"></textarea>
+                <textarea class="form-control" rows="10" name="comment" id="comment" required></textarea>
             </div>
         </div>
 
@@ -27,8 +41,8 @@
               <button type="submit" class="btn btn-primary">Pošalji</button>
             </div>
           </div>
-
         </form>
+        @include('layouts.errors')
     </div>
 </div>
 @stop

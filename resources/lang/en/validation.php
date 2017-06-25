@@ -100,8 +100,50 @@ return [
     */
 
     'custom' => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
+        'email' => [
+            'required' => 'E-mail je obavezno polje',
+        ],
+    ],
+
+    'custom' => [
+        'score' => [
+            'required' => 'Ocjena je obavezno polje',
+        ],
+    ],
+
+    'custom' => [
+        'body' => [
+            'required' => 'Unesite tijelo komentara',
+        ],
+    ],
+
+    'custom' => [
+        'name' => [
+            'required' => 'Unesite ime i prezime',
+        ],
+    ],
+
+    'custom' => [
+        'car' => [
+            'required' => 'Unesite marku i model automobila',
+        ],
+    ],
+
+    'custom' => [
+        'categories' => [
+            'required' => 'Unesite kategorije',
+        ],
+    ],
+
+    'custom' => [
+        'subject' => [
+            'required' => 'Unesite naslov poruke',
+        ],
+    ],
+
+    'custom' => [
+        'telephone' => [
+            'required' => 'Unesite broje telefona/mobitela',
         ],
     ],
 

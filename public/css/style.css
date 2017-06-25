@@ -640,6 +640,10 @@ body {
 	color: #fff;
 }
 
+.about{
+	font-size: 15px;
+}
+
 @media screen and (min-device-width: 768px){
 	.skole{
 		min-height: 800px;

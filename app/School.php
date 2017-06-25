@@ -4,10 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-
-
 use App\Traits\Rateable;
-
 
 class School extends Model
 {
@@ -25,17 +22,10 @@ class School extends Model
     public function addRating($request)
     {
         $exists = \DB::table('ratings')->where('user_id',  \Auth::user()->id)->where('rateable_id', $this->id)->where('rateable_type', get_class($this))->first();
-        if($exists)
-        {
-            dd("Error, već ste ocjenili");
+        
+        if($exists){
+            return \Redirect::back()->withErrors(['Već ste ostavili recenziju za ovu autoškolu.']);
         }
-        else{
-            /*
-            $this->validate(request(), [
-                'body' => 'required',
-                'score' => 'required'
-            ]);
-            */
 
             Rating::create([
                 'user_id' => \Auth::user()->id,
@@ -44,7 +34,7 @@ class School extends Model
                 'body' => $request['body'],
                 'score' => $request['score']
             ]);
-        }
+        //}
     }
     
 }

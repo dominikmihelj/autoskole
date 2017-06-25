@@ -31,6 +31,11 @@ class SchoolController extends Controller
 
     public function store(School $school, Request $request)
     {
+        $this->validate($request, [
+            'body'=> 'required',           
+            'score'=> 'required',
+        ]);
+        
         $school->addRating($request);
         return back();
     }

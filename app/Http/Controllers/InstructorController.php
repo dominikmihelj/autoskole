@@ -27,6 +27,13 @@ class InstructorController extends Controller
 
     public function create(Request $request, School $school)
     {
+        $this->validate($request, [
+            'name'=> 'required',           
+            'telephone'=> 'required',
+            'car'=> 'required',           
+            'categories'=> 'required',           
+        ]);
+        
         Instructor::create([
             'school_id' => $school->id,
             'name' => $request['name'],
@@ -37,9 +44,13 @@ class InstructorController extends Controller
         return redirect('/schools/'.$school->id);
     }
 
-    public function store(School $school, Instructor $instructor)
+    public function store(School $school, Instructor $instructor, Request $request)
     {
-    	$instructor->addRating(request('body'), request('score'));
+        $this->validate($request, [
+            'body'=> 'required',           
+            'score'=> 'required',
+        ]);
+    	$instructor->addRating($request);
         return back();
     }
 }
