@@ -703,3 +703,4 @@ fieldset, label { margin: 0; padding: 0; }
 .score > input:checked ~ label:hover,
 .score > label:hover ~ input:checked ~ label, /* lighten current selection */
 .score > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+
