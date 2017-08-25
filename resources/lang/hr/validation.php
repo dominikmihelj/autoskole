@@ -30,7 +30,7 @@ return [
         'array'   => 'The :attribute must have between :min and :max items.',
     ],
     'boolean'              => 'The :attribute field must be true or false.',
-    'confirmed'            => 'The :attribute confirmation does not match.',
+    'confirmed'            => 'Lozinke se ne poklapaju.',
     'date'                 => 'The :attribute is not a valid date.',
     'date_format'          => 'The :attribute does not match the format :format.',
     'different'            => 'The :attribute and :other must be different.',
@@ -67,7 +67,7 @@ return [
     'not_in'               => 'The selected :attribute is invalid.',
     'numeric'              => ':attribute mora biti broj.',
     'present'              => ':attribute mora biti postavljeno.',
-    'regex'                => 'The :attribute format is invalid.',
+    'regex'                => 'Lozinka mora imati barem 6 znakova, sadržavati velika i mala slova te broj.',
     'required'             => 'Ovo polje je obavezno.',
     'required_if'          => 'The :attribute field is required when :other is :value.',
     'required_unless'      => 'The :attribute field is required unless :other is in :values.',
@@ -84,7 +84,7 @@ return [
     ],
     'string'               => ':attribute mora biti string.',
     'timezone'             => 'The :attribute must be a valid zone.',
-    'unique'               => 'The :attribute has already been taken.',
+    'unique'               => ':attribute već postoji u bazi',
     'uploaded'             => 'The :attribute failed to upload.',
     'url'                  => 'The :attribute format is invalid.',
 
@@ -144,6 +144,21 @@ return [
     'custom' => [
         'telephone' => [
             'required' => 'Unesite broje telefona/mobitela',
+        ],
+    ],
+
+    'custom' => [
+        'password' => [
+            'required' => 'Lozinka mora imati barem 6 znakova, sadržavati velika i mala slova te broj',
+            'regex' => 'Lozinka mora imati barem 6 znakova, sadržavati velika i mala slova te broj',
+            'confirmed' => 'Lozinke se ne poklapaju.',
+        ],
+    ],
+
+    'custom' => [
+        'name' => [
+            'required' => 'Ime je obavezno polje.',
+            'unique' => 'Korisničko ime je zauzeto.'
         ],
     ],
 

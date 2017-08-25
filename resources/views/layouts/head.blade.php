@@ -19,14 +19,18 @@
         {{ Html::style('css/normalize.css') }}
         {{ Html::style('css/font-awesome.min.css') }}
         {{ Html::style('css/fontello.css') }}
-        {{ Html::style('css/css/animate.css') }}
+        {{ Html::style('css/animate.css') }}
         {{ Html::style('css/bootstrap.min.css') }}
         {{ Html::style('css/owl.carousel.css') }}
         {{ Html::style('css/owl.theme.css') }}
         {{ Html::style('css/owl.transitions.css') }}
         {{ Html::style('css/style.css') }}
         {{ Html::style('css/responsive.css') }}
+        {{ Html::style('css/parsley.css') }}
+        {{ Html::script('js/vendor/jquery-1.10.2.min.js') }}
         {{ Html::script('js/vendor/modernizr-2.6.2.min.js') }}
+        {{ Html::script('js/parsley/parsley.js') }}
+        {{ Html::script('js/parsley/i18n/hr.js') }} 
         
         <!--
         <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">

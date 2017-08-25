@@ -33,7 +33,7 @@
 			
 			<div class="card">
 				<div class="card-block">
-						<form method="POST" action="" name="">
+						<form method="POST" action="" name="" id="instruktor">
 							{{ csrf_field() }}
 							<div class="row">
 								<div class="form-group col-sm-8">
@@ -83,4 +83,7 @@
 		</div>
     </div>
 </div>
+<script>
+  $('#instruktor').parsley();
+</script>
 @stop

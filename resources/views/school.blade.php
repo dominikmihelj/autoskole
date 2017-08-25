@@ -48,7 +48,7 @@
 			
 			<div class="card">
 				<div class="card-block">
-						<form method="POST" action="{{ action('SchoolController@store', [$school->id]) }}">
+						<form method="POST" action="{{ action('SchoolController@store', [$school->id]) }}" id="skola">
 							{{ csrf_field() }}
 							<div class="row">
 								<div class="form-group col-sm-9">
@@ -98,4 +98,7 @@
 		</div>
     </div>
 </div>
+<script>
+  $('#skola').parsley();
+</script>
 @stop

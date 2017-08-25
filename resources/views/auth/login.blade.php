@@ -8,7 +8,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Login</div>
                 <div class="panel-body">
-                    <form class="form-horizontal" role="form" method="POST" action="{{ route('login') }}">
+                    <form class="form-horizontal" role="form" method="POST" action="{{ route('login') }}" id="login">
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
@@ -29,7 +29,7 @@
                             <label for="password" class="col-md-4 control-label">Lozinka: </label>
 
                             <div class="col-md-6">
-                                <input id="password" type="password" class="form-control" name="password" required>
+                                <input id="password" type="password" class="form-control" name="password" required minlength="6" data-parsley-pattern="/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).+$/" data-parsley-pattern-message="Lozinka mora imati barem 6 znakova, sadržavati velika i mala slova te broj.">
 
                                 @if ($errors->has('password'))
                                     <span class="help-block">
@@ -66,4 +66,7 @@
         </div>
     </div>
 </div>
+<script>
+  $('#login').parsley();
+</script>
 @endsection

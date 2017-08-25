@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'password' => 'Lozinka mora imati barem 6 znakova i odgovarati ponovljenoj lozinki.',
+    'password' => 'Lozinka mora imati barem 6 znakova, sadržavati velika i mala slova te broj i odgovarati ponovljenoj lozinki.',
     'reset' => 'Lozinka je resetirana!',
     'sent' => 'Na Vašu mail adresu poslan je link za reset lozinke!',
     'token' => 'Token za reset lozinke nije ispravan.',
