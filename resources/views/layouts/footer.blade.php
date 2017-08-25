@@ -4,8 +4,8 @@
                     <div class="col-xs-12">
                         <div class="single-footer">
                             {{ Html::image('img/logo.png'), array('class' => 'wow pulse', 'data-wow-delay' => '1s') }}
-                            <br>
-                            Autoškole.hr | 2017.
+                            <br><br>
+                            <p>Autoškole.hr | 2017.<p>
                             <br>
                             <ul class="list-inline">
                                 <li><a href="{{ url('/') }}">Početna</a></li>

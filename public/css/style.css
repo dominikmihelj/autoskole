@@ -702,5 +702,13 @@ fieldset, label { margin: 0; padding: 0; }
 .score > input:checked + label:hover, /* hover current star when changing score */
 .score > input:checked ~ label:hover,
 .score > label:hover ~ input:checked ~ label, /* lighten current selection */
-.score > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+.score > input:checked ~ label:hover ~ label { color: #FFED85;  }
 
+.naslov p{
+	font-size: 2rem;
+	text-shadow: 2px 1px black;
+}
+
+.single-footer{
+	font-size: 1.8rem;
+}
