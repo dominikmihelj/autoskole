@@ -20,7 +20,7 @@
         	<ul class="list-group">
 			@foreach($instructor->ratings as $rating)
 				<li class="list-group-item">
-					<strong>{{ $rating->created_at->diffForHumans() }}</strong> by {{ $rating->author->name}}
+					<strong><em>{{ $rating->created_at->diffForHumans() }}</em></strong> recenzirano od korisnika: <strong>{{ $rating->author->name}}</strong> | OCJENA: <strong>{{$rating->score}}</strong>
 					<br>
 					{{ $rating->body }}
 				</li>
